@@ -1,0 +1,30 @@
+/******************************************************************************
+Elabore um algoritmo para solicitar 10 números positivos ao usuário, somar todos os números inferiores
+a 50 e exibir o valor da soma.
+Casos de teste:
+a) Para os números 10, 5, 50, 100, 75, 30, 80, 1, 45 e 20, a soma é 111;
+*******************************************************************************/
+#include <stdio.h>
+
+int main() {
+    int numero, soma = 0, i = 0;
+
+    
+    while (i < 10) {
+        printf("Digite o número %d: ", i + 1);
+        scanf("%d", &numero);
+
+   
+        if (numero > 0 && numero < 50) {
+            soma += numero;  
+        }
+
+        i++; 
+    }
+
+    printf("A soma dos números inferiores a 50 é: %d\n", soma);
+
+    return 0;
+}
+
+
