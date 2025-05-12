@@ -1,0 +1,31 @@
+/******************************************************************************
+Elabore um algoritmo para calcular a média das notas de uma prova realizada pelos alunos de uma turma.
+O número de alunos existentes na turma deve ser informado pelo usuário.
+Casos de teste:
+a) Para uma turma de 6 alunos e notas 7,5, 5,0, 7,5, 6,0, 7,0, 6,0, a média é 6,5;
+*******************************************************************************/
+#include <stdio.h>
+
+int main() {
+    float nota = 0, soma = 0, media = 0;
+    int i = 0, num=0;
+   
+   printf("Digite o numero de alunos: ");
+        scanf("%d", &num);
+        
+    while (i < num) {
+        printf("Digite a nota %d: ", i + 1);
+        scanf("%f", &nota);
+        
+        soma += nota;  
+
+        i++;  
+    }
+
+    
+    media = soma / num;
+
+    printf("A média é: %.2f\n", media);
+
+    return 0;
+}
