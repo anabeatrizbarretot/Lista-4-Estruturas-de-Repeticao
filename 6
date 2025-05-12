@@ -1,0 +1,28 @@
+/******************************************************************************
+Elabore um algoritmo para calcular a média das notas referentes a uma prova realizada em uma sala com
+10 alunos.
+Casos de teste:
+a) Para as notas 10,0, 9,5, 7,0, 4,5, 5,0, 5,0, 6,0, 7,0, 6,0, 6,0, a média é 6,6;
+*******************************************************************************/
+#include <stdio.h>
+
+int main() {
+    float nota = 0, soma = 0, media = 0;
+    int i = 0;
+   
+    while (i < 10) {
+        printf("Digite a nota %d: ", i + 1);
+        scanf("%f", &nota);
+        
+        soma += nota;  
+
+        i++;  
+    }
+
+    
+    media = soma / 10;
+
+    printf("A média é: %.2f\n", media);
+
+    return 0;
+}
