@@ -1,0 +1,33 @@
+/******************************************************************************
+Elabore um algoritmo para solicitar ao usuário um número inteiro e apresentar a sua tabuada.
+Casos de teste:
+a) Para a tabuada do número 3, apresentar na saída:
+Tabuada do 3
+3 x 1 = 3
+3 x 2 = 6
+3 x 3 = 9
+3 x 4 = 12
+3 x 5 = 15
+3 x 6 = 18
+3 x 7 = 21
+3 x 8 = 24
+3 x 9 = 27
+3 x 10 = 30
+*******************************************************************************/
+#include <stdio.h>
+
+int main() {
+    int numero=0, i = 1;
+
+    printf("Digite um número inteiro para ver a tabuada: ");
+    scanf("%d", &numero);
+
+
+    printf("\nTabuada do %d\n", numero);
+    while (i <= 10) {
+        printf("%d x %d = %d\n", numero, i, numero * i);
+        i++;
+    }
+
+    return 0;
+}
