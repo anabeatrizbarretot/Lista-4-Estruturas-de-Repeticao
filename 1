@@ -17,17 +17,18 @@ Tabuada do 3
 #include <stdio.h>
 
 int main() {
-    int numero=0, i = 1;
+    int numero = 0, i = 1, resultado=0;
 
     printf("Digite um número inteiro para ver a tabuada: ");
     scanf("%d", &numero);
 
-
     printf("\nTabuada do %d\n", numero);
     while (i <= 10) {
-        printf("%d x %d = %d\n", numero, i, numero * i);
+        resultado = numero * i; 
+        printf("%d x %d = %d\n", numero, i, resultado);  
         i++;
     }
 
     return 0;
 }
+
