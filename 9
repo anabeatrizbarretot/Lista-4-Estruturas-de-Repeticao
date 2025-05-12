@@ -1,0 +1,39 @@
+/******************************************************************************
+Faça um algoritmo para solicitar 10 valores positivos para o usuário e, ao final, exibir o maior e o menor
+desses valores.
+Casos de teste:
+a) Para os números 10, 5, 50, 100, 75, 30, 80, 1, 45 e 20, o maior é 100 e o menor é 1;
+*******************************************************************************/
+#include <stdio.h>
+
+int main() {
+    
+    int numero, maior, menor, i = 0;
+
+    printf("Digite o número 1: ");
+    scanf("%d", &numero);
+
+    maior = numero;
+    menor = numero;
+
+    while (i < 9) {
+        printf("Digite o número %d: ", i + 2);  
+        scanf("%d", &numero);
+
+
+        if (numero > maior) {
+            maior = numero;
+        }
+        if (numero < menor) {
+            menor = numero;
+        }
+
+        i++; 
+    }
+
+
+    printf("O maior valor é: %d\n", maior);
+    printf("O menor valor é: %d\n", menor);
+
+    return 0;
+}
