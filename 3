@@ -7,18 +7,18 @@ b) Para o número 13, serão apresentados os números: 2 4 6 8 10 12;
 c) Para o número 5, serão apresentados os números: 2 4. 
 
 *******************************************************************************/
-#include <stdio.h>
+#include <stdio.h>  // Inclui a biblioteca padrão de entrada e saída (printf, scanf)
 
 int main() {
-    int num=0, i = 0;
+    int num = 0, i = 0;  // Declara duas variáveis inteiras: 'num' para o valor digitado e 'i' como contador
 
-    printf("Digite um número: ");
-    scanf("%d", &num);
+    printf("Digite um número: ");  // Solicita ao usuário que digite um número
+    scanf("%d", &num);  // Lê o número digitado e armazena na variável 'num'
 
-   while (i <= num) {
-        printf("%d ", i);
-        i += 2;
+    while (i <= num) {  // Loop que se repete enquanto 'i' for menor ou igual a 'num'
+        printf("%d ", i);  // Imprime o valor atual de 'i' na mesma linha, seguido de um espaço
+        i += 2;  // Incrementa 'i' de 2 em 2 para pegar apenas os números pares (0, 2, 4, ...)
     }
 
-    return 0;
+    return 0;  // Indica que o programa terminou com sucesso
 }
