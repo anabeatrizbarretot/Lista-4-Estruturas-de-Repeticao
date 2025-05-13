@@ -7,18 +7,19 @@ b) Para o número 13, serão apresentados os números: 1 3 5 7 9 11 13;
 c) Para o número 5, serão apresentados os números: 1 3 5. 
 
 *******************************************************************************/
-#include <stdio.h>
+#include <stdio.h>  // Inclui a biblioteca padrão para entrada e saída (como printf e scanf)
 
 int main() {
-    int num=0, i = 1;
+    int num = 0, i = 1;  // Declara 'num' para armazenar o número digitado e 'i' começando em 1 (primeiro número ímpar)
 
-    printf("Digite um número: ");
-    scanf("%d", &num);
+    printf("Digite um número: ");  // Solicita ao usuário que digite um número
+    scanf("%d", &num);  // Lê o número digitado e armazena na variável 'num'
 
-   while (i <= num) {
-        printf("%d ", i);
-        i += 2 ;
+    while (i <= num) {  // Enquanto 'i' for menor ou igual ao número digitado
+        printf("%d ", i);  // Imprime o valor atual de 'i', seguido de um espaço
+        i += 2;  // Incrementa 'i' de 2 em 2, assim pegando apenas os números ímpares (1, 3, 5, ...)
     }
 
-    return 0;
+    return 0;  // Finaliza o programa
 }
+
