@@ -14,21 +14,22 @@ Tabuada do 3
 3 x 9 = 27
 3 x 10 = 30
 *******************************************************************************/
-#include <stdio.h>
+#include <stdio.h>  // Biblioteca padrão para entrada e saída (printf, scanf)
 
 int main() {
-    int numero = 0, i = 1, resultado=0;
+    int numero = 0, i = 1, resultado = 0;  // Declara as variáveis: número digitado, contador e resultado da multiplicação
 
-    printf("Digite um número inteiro para ver a tabuada: ");
-    scanf("%d", &numero);
+    printf("Digite um número inteiro para ver a tabuada: ");  // Pede ao usuário um número
+    scanf("%d", &numero);  // Lê o número digitado e armazena na variável 'numero'
 
-    printf("\nTabuada do %d\n", numero);
-    while (i <= 10) {
-        resultado = numero * i; 
-        printf("%d x %d = %d\n", numero, i, resultado);  
-        i++;
+    printf("\nTabuada do %d\n", numero);  // Imprime o cabeçalho da tabuada
+
+    while (i <= 10) {  // Laço que repete enquanto i for menor ou igual a 10
+        resultado = numero * i;  // Calcula o produto do número pelo contador 'i'
+        printf("%d x %d = %d\n", numero, i, resultado);  // Imprime a linha da tabuada
+        i++;  // Incrementa o contador para o próximo número da tabuada
     }
 
-    return 0;
+    return 0;  // Indica que o programa terminou com sucesso
 }
 
